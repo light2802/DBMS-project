@@ -41,7 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
         'hospital',
         'widget_tweaks',
+        'django_extensions',
 ]
+
+GRAPH_MODELS={
+        'all_applications' : True,
+        'group_models' : True,
+        }
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -118,16 +124,11 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
-
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=[STATIC_DIR,]
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'static')
-
-
 
 LOGIN_REDIRECT_URL='/afterlogin'
 
