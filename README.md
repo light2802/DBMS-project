@@ -1,4 +1,4 @@
-# Hospital Management
+# Hospital Management System
 Developer - Aarya Chaumal
 ---
 ## Functions
